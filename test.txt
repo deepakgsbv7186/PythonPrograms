@@ -14,7 +14,7 @@ def PreferClient():
     print("*"*30)
     print("1 -> Vinay  2 -> Sanjeet  3 -> Raman")
     client = input('Choose Client: ')
-    # print(cl_name[client])
+    print(cl_name[client])
     diet_logs(client)
     print("")
     print("*"*30)
