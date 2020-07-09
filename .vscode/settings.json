@@ -1,0 +1,5 @@
+{
+    "editor.mouseWheelZoom": true,
+    "debug.console.closeOnEnd": true,
+    "python.autoComplete.addBrackets": true
+}
