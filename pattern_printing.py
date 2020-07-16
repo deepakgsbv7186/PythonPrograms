@@ -27,20 +27,20 @@
 #         print("*"* i)
 
 
-a = int(input("Enter the row to print: "))
+rows = int(input("Enter the row to print: "))
 print("(1 -> Up 0 -> Down) Pyramid")
-b = bool(int(input("Choose: ")))
+ward = bool(int(input("Choose: ")))
 
-def star(a, b):
-    if b == True:
+def star(rows, ward):
+    if ward == True:
         c = 1
-        while c <= a:
+        while c <= rows:
             print(c * "*")
-            c = c + 1
+            c +=1
     else:
-        while a > 0:
-            print(a * "*")
-            a = a - 1
+        while rows > 0:
+            print(rows * "*")
+            rows -= 1
 
-star(a, b)
+star(rows, ward)
   
