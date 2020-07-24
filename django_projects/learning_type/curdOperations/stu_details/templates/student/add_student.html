@@ -1,0 +1,60 @@
+{% extends 'base.html' %}}
+
+{% block title %}Add Student{% endblock title %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="col-sm-4">
+        <h2 class="text-center alert alert-success">Add New Student</h2>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{regform.as_p}}
+            <input type="submit" value="Add" class="btn btn-success">
+        </form>
+    </div>
+    <div class="col-sm-8">
+        <h4 class="text-center alert alert-warning">Display Students</h4>
+        {% if st %}
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+                {% for s in st %}
+                    <tr>
+                        <th scope="row">{{s.id}}</th>
+                        <td>{{s.name}}</td>
+                        <td>{{s.email}}</td>
+                        <td>{{s.password}}</td>
+                        <td>
+                            <a href="{% url 'updateshow' s.id %}" class="btn btn-warning">Update</a>
+                            <form action="{% url 'deletedata' s.id %}" method="post" class="d-inline">
+                                {% csrf_token %}
+                                <input type="submit" value="Delete" class="btn btn-danger">
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                    
+              
+            </tbody>
+          </table>
+        {% else %}
+            <h4 class="text-center">No records Found</h4>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock body %}
+    
+    

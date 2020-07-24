@@ -1,4 +1,5 @@
 {
     "python.autoComplete.addBrackets": true,
-    "python.pythonPath": "C:\\Users\\appy\\envs\\djangoenv\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\appy\\envs\\djangoenv\\Scripts\\python.exe",
+    "editor.fontFamily": "Comic Sans MS, 'Courier New', monospace"
 }
