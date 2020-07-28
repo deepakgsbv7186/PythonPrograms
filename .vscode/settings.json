@@ -3,5 +3,7 @@
     "debug.console.closeOnEnd": true,
     "python.autoComplete.addBrackets": true,
     "python.pythonPath": "C:\\Users\\appy\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
-    "editor.fontFamily": "Comic Sans MS, monospace"
+    "editor.fontFamily": "Comic Sans MS, monospace",
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 12
 }
